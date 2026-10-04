@@ -1571,6 +1571,76 @@
         "name": "NewSprite88",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "Track1_Instrument2.m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Track1_Instrument2.m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Track1_Instrument3.m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Track1_Instrument3.m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Track1_Instrument4.m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Track1_Instrument4.m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Track1_Instrument (1).m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Track1_Instrument (1).m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Track1_Instrument.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Track1_Instrument.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Voice 261004_144734-1.m4a",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Voice 261004_144734-1.m4a",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "Foot steps.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Foot steps.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ]
   },
@@ -23234,7 +23304,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "NewSprite24",
           "persistentUuid": "977794a3-6d37-4b00-92bd-e6aa884bd96a",
@@ -23290,19 +23360,35 @@
                         [
                           {
                             "x": 20,
+                            "y": 51.5
+                          },
+                          {
+                            "x": 23,
+                            "y": 48
+                          },
+                          {
+                            "x": 23,
                             "y": 0
                           },
                           {
-                            "x": 45,
+                            "x": 42,
                             "y": 0
                           },
                           {
-                            "x": 45,
-                            "y": 61
+                            "x": 42,
+                            "y": 48
                           },
                           {
-                            "x": 20,
-                            "y": 61
+                            "x": 45,
+                            "y": 51.5
+                          },
+                          {
+                            "x": 43.5,
+                            "y": 60.5
+                          },
+                          {
+                            "x": 21.5,
+                            "y": 60.5
                           }
                         ]
                       ]
@@ -24161,6 +24247,42 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusic"
+              },
+              "parameters": [
+                "",
+                "Track1_Instrument.m4a",
+                "yes",
+                "50",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"Footsteps\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -24227,7 +24349,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Animations",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -24268,6 +24389,11 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
