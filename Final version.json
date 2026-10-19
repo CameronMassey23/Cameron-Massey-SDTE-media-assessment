@@ -1641,6 +1641,46 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite89.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite89.png\"}",
+        "name": "NewSprite89",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite90.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite90",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite91.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite91.png\"}",
+        "name": "NewSprite91",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite92.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite92",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite93.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite93",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -1651,9 +1691,9 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Health",
+      "name": "Progress",
       "type": "number",
-      "value": 3
+      "value": 0
     }
   ],
   "layouts": [
@@ -1679,7 +1719,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7077142870146982,
+        "zoomFactor": 0.4448515998886866,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -10161,7 +10201,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "NewSprite23",
+          "name": "Respawn_point_3",
           "opacity": 0,
           "persistentUuid": "651cff31-e15b-4187-8c0b-bd558bf594df",
           "width": 0,
@@ -17574,7 +17614,7 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "NewSprite25",
+          "name": "Spear_2",
           "persistentUuid": "7dcb89cf-ee3e-420d-aae7-a7a2c28fea08",
           "width": 0,
           "x": 3324,
@@ -19899,6 +19939,40 @@
           "y": 760,
           "z": -209,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1000,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "ProgressBackground",
+          "persistentUuid": "b1c2900c-d6d5-4e3a-a859-06274bbe3595",
+          "width": 1000,
+          "x": 647,
+          "y": -276,
+          "zOrder": 141,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1000,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "ProgressFill",
+          "persistentUuid": "2b31e831-1edc-405a-bbc3-e9da21e0a36e",
+          "width": 1000,
+          "x": 647,
+          "y": -276,
+          "zOrder": 142,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -23244,7 +23318,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite23",
+          "name": "Respawn_point_3",
           "persistentUuid": "c7b13e11-de84-49a7-b372-8f101023213f",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -23253,7 +23327,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "NewSprite23",
+              "name": "Respawn point 3",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -23526,7 +23600,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite25",
+          "name": "Spear_2",
           "persistentUuid": "7b7a0395-9a1f-44b2-b525-4a3e9bbe5dcf",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -24112,6 +24186,130 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ProgressBackground",
+          "persistentUuid": "a420dd67-4504-4e57-95cd-d42802f71684",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite18",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite93",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 42
+                          },
+                          {
+                            "x": 125,
+                            "y": 42
+                          },
+                          {
+                            "x": 125,
+                            "y": 58
+                          },
+                          {
+                            "x": 1,
+                            "y": 58
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "ProgressFill",
+          "persistentUuid": "eb8fe764-411b-4ce9-b978-dabbec589060",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite23",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite91",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 51
+                          },
+                          {
+                            "x": 124,
+                            "y": 51
+                          },
+                          {
+                            "x": 124,
+                            "y": 57
+                          },
+                          {
+                            "x": 2,
+                            "y": 57
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -24142,7 +24340,7 @@
                 "objectName": "NewSprite22"
               },
               {
-                "objectName": "NewSprite25"
+                "objectName": "Spear_2"
               },
               {
                 "objectName": "NewSprite15"
@@ -24240,7 +24438,13 @@
             "objectName": "Lamp"
           },
           {
-            "objectName": "NewSprite23"
+            "objectName": "Respawn_point_3"
+          },
+          {
+            "objectName": "ProgressBackground"
+          },
+          {
+            "objectName": "ProgressFill"
           }
         ]
       },
@@ -24335,6 +24539,22 @@
                 "4",
                 "",
                 ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Progress",
+                "=",
+                "0"
               ]
             }
           ]
@@ -25181,6 +25401,49 @@
               },
               "parameters": [
                 "Main_character",
+                "Spear_2",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Main_character",
+                "Health",
+                "1",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PutAroundObject"
+              },
+              "parameters": [
+                "Main_character",
+                "Respawn_point_3",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Main_character",
                 "Spikes2",
                 "",
                 "",
@@ -25208,7 +25471,7 @@
               },
               "parameters": [
                 "Main_character",
-                "NewSprite23",
+                "Respawn_point_3",
                 "0",
                 "0"
               ]
@@ -25251,7 +25514,7 @@
               },
               "parameters": [
                 "Main_character",
-                "NewSprite23",
+                "Respawn_point_3",
                 "0",
                 "0"
               ]
@@ -25294,7 +25557,7 @@
               },
               "parameters": [
                 "Main_character",
-                "NewSprite23",
+                "Respawn_point_3",
                 "0",
                 "0"
               ]
@@ -25346,6 +25609,23 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const players = runtimeScene.getObjects(\"Main_character\");",
+            "const fills = runtimeScene.getObjects(\"ProgressFill\");",
+            "const backgrounds = runtimeScene.getObjects(\"ProgressBackground\");",
+            "",
+            "const xcoord = players[0].getX();",
+            "const progress = Math.max(0, Math.min(100, ((xcoord - 850) / (4000 - 850)) * 100));",
+            "",
+            "fills[0].setWidth(backgrounds[0].getWidth() * progress / 100);",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "layers": [
@@ -25445,6 +25725,60 @@
           "isLightingLayer": false,
           "isLocked": false,
           "name": "hud",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
           "renderingType": "",
           "visibility": true,
           "cameras": [],
